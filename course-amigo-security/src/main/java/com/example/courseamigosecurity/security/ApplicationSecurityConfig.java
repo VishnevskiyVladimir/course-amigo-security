@@ -14,14 +14,17 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/", "index", "/css/*", "js/*")
+                .permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
                 .httpBasic();
-
         /*
          проверку подлинности любого запроса к приложению с помощью входа
          в систему на основе формы или базовой проверки подлинности HTTP.
          */
     }
+
+
 }
