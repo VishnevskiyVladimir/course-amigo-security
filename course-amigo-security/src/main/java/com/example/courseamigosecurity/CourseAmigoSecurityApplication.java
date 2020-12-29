@@ -8,6 +8,7 @@ public class CourseAmigoSecurityApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CourseAmigoSecurityApplication.class, args);
+		System.out.println("<<<<<<<<<<<<<<< INITIALIZED >>>>>>>>>>>>>>>");
 	}
 
 }
