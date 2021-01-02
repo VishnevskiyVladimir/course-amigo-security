@@ -41,7 +41,8 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login").permitAll();
+                .loginPage("/login").permitAll()
+                .defaultSuccessUrl("/courses", true);
         /*
          проверку подлинности любого запроса к приложению с помощью входа
          в систему на основе формы или базовой проверки подлинности HTTP.
