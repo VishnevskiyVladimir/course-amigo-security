@@ -1,6 +1,7 @@
-package com.example.courseamigosecurity.student;
+package com.example.courseamigosecurity.controller;
 
 
+import com.example.courseamigosecurity.student.Student;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
